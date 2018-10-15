@@ -1,3 +1,18 @@
 # create a dict with juct 2 lists,
 dict(zip('amir kamran ajmal noman'.split(), [28, 22, 40, 27]))
 # {'ajmal': 40, 'amir': 28, 'kamran': 22, 'noman': 27}
+
+-------------------------------------------------------------------------
+# if and else in list comprehension 
+
+lst = 'amir hamza uqba ayesha danish'.split()
+# ['amir', 'hamza', 'uqba', 'danish']
+
+[i if i[0] == 'a' else 'hahaha' for i in lst]
+# ['amir', 'hahaha', 'hahaha', 'hahaha']
+
+-------------------------------------------------------------------------
+
+
+
+
