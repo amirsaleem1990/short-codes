@@ -1,2 +1,7 @@
 # entire column to lower case
 df['column'] = df['column'].str.lower()
+
+
+# string me jagan bhi <https> ho to us  k baad agly space tak sab remove kar do
+df[column] = df[column].apply(lambda i: re.sub(r"http\S+", "", i))
+
