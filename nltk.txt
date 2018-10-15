@@ -1,0 +1,5 @@
+# tokenize and remove puncuations
+
+from nltk.tokenize import RegexpTokenizer
+tokenizer = RegexpTokenizer(r'\w+')
+df["tokens"] = df["text"].apply(tokenizer.tokenize)
