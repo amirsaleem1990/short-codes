@@ -1,0 +1,2 @@
+# entire column to lower case
+df['column'] = df['column'].str.lower()
