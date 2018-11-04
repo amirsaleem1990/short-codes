@@ -6,3 +6,5 @@ df['column'] = df['column'].str.lower()
 import re
 df[column] = df[column].apply(lambda i: re.sub(r"http\S+", "", i))
 
+# all null values from all variables 
+df.isnull().sum()
