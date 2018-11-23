@@ -1,0 +1,6 @@
+# python list comprehension me iterator local hota h, 
+eg: 
+[i for i in 'amir']
+# ['a', 'm', 'i', 'r']
+print(i)
+# name 'i' is not defined
