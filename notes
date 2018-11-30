@@ -4,3 +4,7 @@ eg:
 # ['a', 'm', 'i', 'r']
 print(i)
 # name 'i' is not defined
+----------------
+# all variables and functions defined in current session
+%whos
+----------------
