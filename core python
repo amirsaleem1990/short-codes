@@ -157,7 +157,10 @@ d
 sorted(d.items(), key=lambda w: w[1], reverse=True)
 [('l', 8), ('r', 4), ('s', 3), ('a', 2), ('e', 2), ('m', 1), ('i', 1)]
 ----------------------------------------------------------------------------
-
+# create variables in loop (run time)
+for x in range(0, 10):
+    globals()['string%s' % x] = 'Hello'
+# this code will create a 10 variables [string1, string2... string9] each variable contain <'Hello'>
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
