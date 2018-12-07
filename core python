@@ -162,22 +162,69 @@ for x in range(0, 10):
     globals()['string%s' % x] = 'Hello'
 # this code will create a 10 variables [string1, string2... string9] each variable contain <'Hello'>
 ----------------------------------------------------------------------------
+# tuple to multiple lists
+a,b = zip(*[(1, 2), (3, 4), (5, 6)])
+a
+# (1, 3, 5)
+b
+# (2, 4, 6)
+The only difference is that you get tuples instead of lists. You can convert them to lists using
+list(map(list, zip(*[(1, 2), (3, 4), (5, 6)])))
+# [[1, 3, 5], [2, 4, 6]]
 
+# another example:
+# <names2> is a list of tuples, each tuple contain 2 values
+a, b = zip(*names2)
+len(a), len(b)
+# (874, 874)
+a[0], b[0]
+# ('aamir talal khan', 'Aamir Khan')
+df['orignal_name'] = list(a)
+df['wikipedia_name'] = list(b)
+df.shape
+# (874, 2)
+df.to_csv('name_deffrence.csv')
 ----------------------------------------------------------------------------
+# fix split size
+# list me kitni values chahyeh?
+n = 'saleem amir hamza uqba'
 
-----------------------------------------------------------------------------
+n.split(' ', 1)
+#['saleem', 'amir hamza uqba']
 
-----------------------------------------------------------------------------
+n.split(' ', 2)
+#['saleem', 'amir', 'hamza uqba']
 
-----------------------------------------------------------------------------
-----------------------------------------------------------------------------
+n.split(' ', 3)
+#['saleem', 'amir', 'hamza', 'uqba']
 
+n.split(' ', 4)
+#['saleem', 'amir', 'hamza', 'uqba']
 ----------------------------------------------------------------------------
-
+# all digits in text to 0, 4 -> 0, 45 -> 00, 4555 -> 0000 and 4.55 -> 0.00
+import re
+for i in renge(len(text)):
+  text[i] = re.sub('\d', '0', text[i])
 ----------------------------------------------------------------------------
-
+# remove punctuations
+# all these !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ ar removed using <string.punctuation>
+import string
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~am,,,'.translate(str.maketrans('','',string.punctuation))
+# am
 ----------------------------------------------------------------------------
-
+# replace or remove web links using re
+# in this example we replace all links to "<url>"
+for i in range(len(list_of_strings)):
+    if 'www.' in list_of_strings[i] or 'http:' in list_of_strings[i]  or '.com' in list_of_strings[i]:
+        list_of_strings[i] = re.sub(r"([^ ]+(?<=\.[a-z]{3}))", "<url>", list_of_strings[i])
+----------------------------------------------------------------------------
+# rendomely split data
+a = list('amirsaleem')
+a1, a2 = train_test_split(a)
+a1  
+# ['l', 'a', 'i', 'a', 'e', 'r', 'm']
+a2 
+# ['m', 's', 'e']
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
