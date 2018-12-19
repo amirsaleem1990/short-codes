@@ -197,13 +197,46 @@ a2
  # agar ye pehly sy ON ho ga to mkdir wagera sy pehly <%> ya <!> lagany ki zaroorat nahi h
  %automagic
  ------------------------------------------------------
- 
+# sorted by last value
+names = ['Amir saleem', 'Ayesha Haji', 'muhammd muaz', 'Hamza khalid', 'Zahid mughal', 'Muhammad imran']
+sorted(names, key=lambda name:name.split()[-1])
+# ['Ayesha Haji',
+# 'Muhammad imran',
+# 'Hamza khalid',
+# 'muhammd muaz',
+# 'Zahid mughal',
+# 'Amir saleem'] 
 ----------------------------------------------------------------------------
-
+# get only last value
+names = ['Amir saleem', 'Ayesha Haji', 'muhammd muaz', 'Hamza khalid', 'Zahid mughal', 'Muhammad imran']
+lmbda = lambda name: name.split()[-1]
+[lmbda(i) for i in names]
+# ['saleem', 'Haji', 'muaz', 'khalid', 'mughal', 'imran']
 ----------------------------------------------------------------------------
+# multiply function
+def h(*lens_multiply):
+    i =iter(lens)
+    v = next(i)
+    for l in i:
+        v *= l
+    return v
+h(4,5,9,4)
+# 720
 
+# another aproach
+def h(a, *aa):
+    v = a
+    for i in aa:
+        v *= i
+    return v
+h(3,5,7,9)
+# 945
 ----------------------------------------------------------------------------
-
+# defince a dictionary without cutation marks
+a = dict(red=21, green=68, blue=120)
+b = {'red' : 21, 'green': 68, 'blue' : 120}
+a == b
+# True
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
