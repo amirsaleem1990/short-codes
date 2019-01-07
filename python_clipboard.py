@@ -17,3 +17,4 @@ def t(n='', tt=''):
 			clipboard.copy(tt.replace(' ', '_').replace("'", '').strip()+'.mp4')
 		else:
 			return "please Enter at least one argument"
+
