@@ -235,11 +235,18 @@ h(3,5,7,9)
 # dict comprehension
 {i:'*'*i for i in range(20) if i % 2 == 1}
 ----------------------------------------------------------------------------
-
+order dictnory by keys:
+import operator
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+sorted_x = sorted(x.items(), key=operator.itemgetter(0))
 ----------------------------------------------------------------------------
-
+order dictnory by values:
+import operator
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+sorted_x = sorted(x.items(), key=operator.itemgetter(1))
 ----------------------------------------------------------------------------
-
+all combinations of list
+itertools.combinations(list, size_of_each_combination)
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
