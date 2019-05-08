@@ -245,8 +245,10 @@ import operator
 x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 sorted_x = sorted(x.items(), key=operator.itemgetter(1))
 ----------------------------------------------------------------------------
-all combinations of list
-itertools.combinations(list, size_of_each_combination)
+# all possible combinations (ignoring order, so <a,b> == <b,a>)
+from itertools import combinations
+input = ['a', 'b', 'c', 'd']
+output = sum([list(map(list, combinations(input, i))) for i in range(len(input) + 1)], [])
 ----------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------
