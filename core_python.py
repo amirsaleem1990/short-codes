@@ -284,3 +284,6 @@ string.ascii_letters
 
 
 # Converting Epoch time into the datetime
+from datetime import datetime
+datetime.fromtimestamp(1562674474)
+
