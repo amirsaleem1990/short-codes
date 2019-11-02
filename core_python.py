@@ -287,3 +287,13 @@ string.ascii_letters
 from datetime import datetime
 datetime.fromtimestamp(1562674474)
 
+
+# find python library place in your computer
+pip3 show pandas
+
+
+# usually we install python packegs using <pip>, As an alternative to using pip, you can download a package directly from the site (make certain that is downloaded to the proper directory), unpack it (see Chapter 9 on how to unpack software), and then run the following:
+python setup.py install
+# This will install any unpacked packages that haven’t yet been installed.
+
+
