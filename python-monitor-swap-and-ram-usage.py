@@ -1,4 +1,3 @@
-%matplotlib inline
 import psutil
 import pprint
 import pandas as pd
