@@ -302,3 +302,4 @@ python setup.py install
 import warnings
 warnings.filterwarnings('ignore')
 -----------------------------------------------------
+# all files and folder (like <tree> in bash>) ..................... import os, list(os.walk("."))
