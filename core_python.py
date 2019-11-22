@@ -297,3 +297,8 @@ python setup.py install
 # This will install any unpacked packages that haven’t yet been installed.
 
 
+-----------------------------------------------------
+# ignore warnings
+import warnings
+warnings.filterwarnings('ignore')
+-----------------------------------------------------
