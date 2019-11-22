@@ -303,3 +303,8 @@ import warnings
 warnings.filterwarnings('ignore')
 -----------------------------------------------------
 # all files and folder (like <tree> in bash>) ..................... import os, list(os.walk("."))
+--------------------------------------------
+# print in difrent colors
+from termcolor import colored
+print(colored('hello', 'red'), colored('world', 'green'))
+--------------------------------------------
