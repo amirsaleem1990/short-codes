@@ -309,3 +309,4 @@ from termcolor import colored
 print(colored('hello', 'red'), colored('world', 'green'))
 --------------------------------------------
 
+# isinstance multiple OR conditions ................ isinstance(a, (int, str))
