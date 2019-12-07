@@ -1,1 +1,4 @@
 open Rstudio
+> reticulate::repl_python()
+now you are in python mode.
+enjoy... :p
