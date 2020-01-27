@@ -310,3 +310,4 @@ print(colored('hello', 'red'), colored('world', 'green'))
 --------------------------------------------
 
 # isinstance multiple OR conditions ................ isinstance(a, (int, str))
+# replace multiple items ............... 'amirsaleem'.translate(str.maketrans({'a': 'A', 'e': 'E'}))
