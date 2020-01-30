@@ -26,6 +26,7 @@ try:
         d["Swap-Used[GB]"].append(round(swap, 2))
 except KeyboardInterrupt:
     dd = pd.DataFrame(d)
+    dd["BOTH"] = dd["Ram-Used[GB]"] +  dd["Swap-Used[GB]"]
     print("Max_Ram: ", dd["Ram-Used[GB]"].max())
     print("Max_Swap: ", dd["Swap-Used[GB]"].max())
     print("\n")
