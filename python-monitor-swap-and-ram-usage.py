@@ -1,3 +1,4 @@
+#!/usr/bin/ipython3
 import psutil
 import pprint
 import pandas as pd
