@@ -4,6 +4,7 @@ import pprint
 import pandas as pd
 import datetime
 import time
+import matplotlib.pyplot as plt
 def mem_swap():
     a = psutil.virtual_memory()
     a = (a.total - a.available) / 1.074e+9
@@ -29,5 +30,9 @@ except KeyboardInterrupt:
     print("Max_Swap: ", dd["Swap-Used[GB]"].max())
     print("\n")
     dd.plot()
+    plt.show()
     print("\n")
     pprint.pprint(dd.sort_values("Ram-Used[GB]",ascending=False))
+
+    print("\n\nWe saved usage files as /home/amir/memory_usage.csv\n\n")
+    dd.to_csv("/home/amir/memory_usage.csv")
