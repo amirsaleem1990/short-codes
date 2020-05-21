@@ -316,3 +316,11 @@ from tqdm import tqdm_notebook
 for param in tqdm_notebook(range(1000000)):
     pass
 --------------------
+----------------------------
+# multiple replaces in one string
+s = 'one two one two one'
+
+print(s.translate(str.maketrans({'o': 'O', 't': 'T'})))
+# One TwO One TwO One
+---------------------------
+
