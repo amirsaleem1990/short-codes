@@ -324,3 +324,7 @@ print(s.translate(str.maketrans({'o': 'O', 't': 'T'})))
 # One TwO One TwO One
 ---------------------------
 
+# remove multiple chracters from string:
+characters_to_remove = ['a', "b"]
+translationtable = str.maketrans({i:'' for i in characters_to_remove})
+"amirbhai".translate(translationtable)
