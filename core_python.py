@@ -332,3 +332,4 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 # get only characters from string .............. import re; word1 = " ".join(re.findall("[a-zA-Z]+", st))
 
 check if a variable exists ................. if 'myVar' in locals(): print("<myVar> is in your variables")
+# Convert seconds to hh:mm:ss in Python ................... import time; time.strftime('%H:%M:%S', time.gmtime(12345))
