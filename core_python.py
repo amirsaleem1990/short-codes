@@ -333,3 +333,4 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 
 check if a variable exists ................. if 'myVar' in locals(): print("<myVar> is in your variables")
 # Convert seconds to hh:mm:ss in Python ................... import time; time.strftime('%H:%M:%S', time.gmtime(12345))
+# load local html in : s = BeautifulSoup(open("Resume_2.html", "r"), "lxml")
