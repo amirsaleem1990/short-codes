@@ -335,3 +335,4 @@ check if a variable exists ................. if 'myVar' in locals(): print("<myV
 # Convert seconds to hh:mm:ss in Python ................... import time; time.strftime('%H:%M:%S', time.gmtime(12345))
 # load local html in BeautifulSoup : s = BeautifulSoup(open("Resume_2.html", "r"), "lxml")
 
+# beautifulsoup get all hrefs in given link ............ for i in soup.find_all('a', href=True): print(i['href'])
