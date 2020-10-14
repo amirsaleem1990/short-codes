@@ -331,8 +331,9 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 # get file last modification time ............. os.path.getmtime("proceced_IDs.csv")
 # get only characters from string .............. import re; word1 = " ".join(re.findall("[a-zA-Z]+", st))
 
-check if a variable exists ................. if 'myVar' in locals(): print("<myVar> is in your variables")
+# check if a variable exists ................. if 'myVar' in locals(): print("<myVar> is in your variables")
 # Convert seconds to hh:mm:ss in Python ................... import time; time.strftime('%H:%M:%S', time.gmtime(12345))
 # load local html in BeautifulSoup : s = BeautifulSoup(open("Resume_2.html", "r"), "lxml")
 
 # beautifulsoup get all hrefs in given link ............ for i in soup.find_all('a', href=True): print(i['href'])
+# latters ................. string.ascii_letters
