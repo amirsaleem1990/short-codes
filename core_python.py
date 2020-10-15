@@ -338,3 +338,4 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 # beautifulsoup get all hrefs in given link ............ for i in soup.find_all('a', href=True): print(i['href'])
 # latters ................. string.ascii_letters
 
+# list comprehention with for,if and else .............. [f(x) if condition else g(x) for x in sequence]
