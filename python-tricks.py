@@ -27,3 +27,16 @@
 #.......................
 enumerate(grades, starting_number)
 #======================
+# Unpacking
+# unpacking values inside of tuples
+>>> cards = ('A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K' )
+
+# extract ace, 2, 3 only
+>>> ace, two, three, *_ = cards
+>>> print(ace, two, three)
+# A 2 3
+
+# extract ace, [numbers], J, Q, K
+>>> ace, *numbers, J, Q, K = cards
+>>> print(ace, numbers, J, Q, K)
+# A ['2', '3', '4', '5', '6', '7', '8', '9', '10'] J Q K
