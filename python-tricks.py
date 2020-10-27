@@ -40,3 +40,18 @@ enumerate(grades, starting_number)
 >>> ace, *numbers, J, Q, K = cards
 >>> print(ace, numbers, J, Q, K)
 # A ['2', '3', '4', '5', '6', '7', '8', '9', '10'] J Q K
+
+
+# ---------------------------
+# Convert two lists into a dictionary
+itemDictionary = dict(zip(lst_1, lst_2))
+
+#-----------------------------------
+# Naming slices (slice(start, end, step))
+>>> a = [0, 1, 2, 3, 4, 5]
+>>> LASTTHREE = slice(-3, None)
+>>> LASTTHREE
+# slice(-3, None, None)
+>>> a[LASTTHREE]
+# [3, 4, 5]
+
