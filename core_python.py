@@ -340,3 +340,4 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 
 # list comprehention with for,if and else .............. [f(x) if condition else g(x) for x in sequence]
 
+# list of lists to one big list ......... list(more_itertools.flatten(lst))
