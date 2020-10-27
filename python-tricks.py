@@ -106,7 +106,39 @@ set([4, 5, 6, 7])
 set([1, 2, 4, 5, 6, 7])
 >>> (A ^ B) == ((A - B) | (B - A))
 #--------------------------------
+# Grouping rows by a given key (itertools.groupby)
+>>> from operator import itemgetter
+>>> import itertools
+>>> date = [line.strip().split(',') for line in open('contactlenses.csv', 'r')]
+>>> data = data[1:]
+>>> def print_data(rows):
+		print '\n'.join('\t'.join('{: <16}'.format(s) for s in row) for row in rows)
 
+>>> print_data(data)
+young               myope                   no                      reduced                 none
+young               myope                   no                      normal                  soft
+young               myope                   yes                     reduced                 none
+young               myope                   yes                     normal                  hard
+young               hypermetrope            no                      reduced                 none
+young               hypermetrope            no                      normal                  soft
+young               hypermetrope            yes                     reduced                 none
+young               hypermetrope            yes                     normal                  hard
+pre-presbyopic      myope                   no                      reduced                 none
+pre-presbyopic      myope                   no                      normal                  soft
+pre-presbyopic      myope                   yes                     reduced                 none
+pre-presbyopic      myope                   yes                     normal                  hard
+pre-presbyopic      hypermetrope            no                      reduced                 none
+pre-presbyopic      hypermetrope            no                      normal                  soft
+pre-presbyopic      hypermetrope            yes                     reduced                 none
+pre-presbyopic      hypermetrope            yes                     normal                  none
+presbyopic          myope                   no                      reduced                 none
+presbyopic          myope                   no                      normal                  none
+presbyopic          myope                   yes                     reduced                 none
+presbyopic          myope                   yes                     normal                  hard
+presbyopic          hypermetrope            no                      reduced                 none
+presbyopic          hypermetrope            no                      normal                  soft
+presbyopic          hypermetrope            yes                     reduced                 none
+presbyopic          hypermetrope            yes                     normal                  none
 #--------------------------------
 
 #--------------------------------
