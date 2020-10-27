@@ -18,3 +18,9 @@
 # False
 
 # ---------------------
+# Underscore(_) separator for Large Number
+# '_' can be used as a separator for expressing a large number
+>>> ten_billion = 10_000_000_000
+>>> print(f'{ten_billion:,}')
+# 10,000,000,000
+
