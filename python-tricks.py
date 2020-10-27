@@ -75,9 +75,14 @@ itemDictionary = dict(zip(lst_1, lst_2))
 >>> mi = dict(zip(m.values(), m.keys()))
 >>> mi
 # {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
-
 #--------------------------------
+# multiple lists to one big list
+>>> a = [[1, 2], [3, 4], [5, 6], ['amir', 4]]
+>>> sum(a,[])
+# [1, 2, 3, 4, 5, 6, 'amir', 4]
 
+>>> list(itertools.chain.from_iterable(a))
+# [1, 2, 3, 4, 5, 6, 'amir', 4]
 #--------------------------------
 
 #--------------------------------
