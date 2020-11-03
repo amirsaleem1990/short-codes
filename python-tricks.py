@@ -174,7 +174,10 @@ presbyopic          hypermetrope            yes                     normal      
 >>> print(f"It took {time_diff} Secs to execute this method") 
 # It took 13.197494000000006 Secs to execute this method
 #--------------------------------
-
+# enumerate
+>>> a = ['Hello', 'world', '!']
+>>> list(enumerate(a))
+[(0, 'Hello'), (1, 'world'), (2, '!')]
 #--------------------------------
 
 #--------------------------------
