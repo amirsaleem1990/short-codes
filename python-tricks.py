@@ -141,14 +141,18 @@ presbyopic          hypermetrope            yes                     reduced     
 presbyopic          hypermetrope            yes                     normal                  none
 #--------------------------------
 # Using ZIP When Working with Lists
-countries = ['France', 'Germany', 'Canada']
-capitals = ['Paris', 'Berlin', 'Ottawa']
-for country, capital in zip(countries,capitals):
-	print(country, capital) # France Paris 
-							# Germany Berlin
-                            # Canada Ottawa
+>>> countries = ['France', 'Germany', 'Canada']
+>>> capitals = ['Paris', 'Berlin', 'Ottawa']
+>>> for country, capital in zip(countries,capitals):
+		print(country, capital) # France Paris 
+								# Germany Berlin
+            	                # Canada Ottawa
 #--------------------------------
-
+# every possible pair
+>>> import itertools
+>>> friends = ['Team 1', 'Team 2', 'Team 3', 'Team 4']
+>>> list(itertools.combinations(friends, r=2)) 
+# [('Team 1', 'Team 2'),      ('Team 1', 'Team 3'),  ('Team 1', 'Team 4'),  ('Team 2', 'Team 3'),  ('Team 2', 'Team 4'),  ('Team 3', 'Team 4')]
 #--------------------------------
 
 #--------------------------------
