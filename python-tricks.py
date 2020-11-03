@@ -348,7 +348,12 @@ import collections
 >>> ''.join(d.keys())
 # 'bacde'
 #--------------------------------
-
+# Use A Dictionary To Store A Switch.
+>>> func_dict = {'sum': lambda x, y: x + y, 'subtract': lambda x, y: x - y}
+>>> func_dict['sum'](9,3)
+# 12
+>>> func_dict['subtract'](9,3)
+# 6
 #--------------------------------
 
 #--------------------------------
