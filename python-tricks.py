@@ -325,7 +325,16 @@ else:
 >>> (A ^ B) == ((A - B) | (B - A))
 # True
 #--------------------------------
+# Counter data structure (an unordered collection where elements are stored as dictionary keys and their counts are stored as dictionary values).
+import collections
 
+>>> A = collections.Counter([1, 1, 2, 2, 3, 3, 3, 3, 4, 5, 6, 7])
+>>> A
+# Counter({3: 4, 1: 2, 2: 2, 4: 1, 5: 1, 6: 1, 7: 1})
+>>> A.most_common(1)
+# [(3, 4)]
+>>> A.most_common(3)
+# [(3, 4), (1, 2), (2, 2)]
 #--------------------------------
 
 #--------------------------------
