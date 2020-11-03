@@ -298,7 +298,12 @@ else:
 >>> list(itertools.filterfalse(bool, [None, False, 1, 0, 10]))
 # [None, False, 0]
 #--------------------------------
-
+# Creating an iterator that computes the function using arguments obtained from the iterable of iterables
+>>> import itertools 
+>>> import operator
+>>> a = [(2, 6), (8, 4), (7, 3)]
+>>> list(itertools.starmap(operator.mul, a))
+# [12, 32, 21]
 #--------------------------------
 
 #--------------------------------
