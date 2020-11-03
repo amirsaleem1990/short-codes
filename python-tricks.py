@@ -355,7 +355,14 @@ import collections
 >>> func_dict['subtract'](9,3)
 # 6
 #--------------------------------
+# Generating uuid.
+# This creates a randomized 128-bit number that will almost certainly be unique.
+# In fact, there are over 2¹²² possible UUIDs that can be generated. That’s over five undecillion (or 5,000,000,000,000,000,000,000,000,000,000,000,000).
 
+>>> import uuid
+>>> user_id = uuid.uuid4()
+>>> user_id 
+# UUID('7c2faedd-805a-478e-bd6a-7b26210425c7')
 #--------------------------------
 
 #--------------------------------
