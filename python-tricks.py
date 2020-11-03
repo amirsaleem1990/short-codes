@@ -224,9 +224,26 @@ presbyopic          hypermetrope            yes                     normal      
 >>> 1 < n < 20
 # True
 #--------------------------------
-
+# Try-catch-else construct.
+try:
+  foo() 
+except Exception: 
+  print("Exception occured")
+else:
+  print("Exception didnt occur")
+finally:
+  print("Always gets here")
 #--------------------------------
+# While-else construct.
+i = 5
 
+while i > 1:
+    print("Whil-ing away!")
+    i -= 1
+    if i == 3:
+        break
+else:
+    print("Finished up!")
 #--------------------------------
 
 #--------------------------------
