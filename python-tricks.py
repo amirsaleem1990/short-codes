@@ -191,7 +191,13 @@ presbyopic          hypermetrope            yes                     normal      
 >>> zip(*z)
 # [(1, 2, 3), ('a', 'b', 'c')]
 #--------------------------------
+>>> a = [1, 2, -3]
+>>> max(a)
+# 2
 
+# Both min/max has key value to allow to get maximum by appliing function
+>>> max(a,key=abs)
+# 3
 #--------------------------------
 
 #--------------------------------
