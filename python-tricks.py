@@ -207,7 +207,12 @@ presbyopic          hypermetrope            yes                     normal      
 >>> sorted(a,key=abs)
 # [1, 2, -3]
 #--------------------------------
-
+# Merging/Upserting two dictionaries.
+>>> a = {"a":1, "b":1}
+>>> b = {"b":2, "c":1}
+>>> a.update(b)
+>>> a
+# {"a":1, "b":2, "c":1}
 #--------------------------------
 
 #--------------------------------
