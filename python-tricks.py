@@ -166,7 +166,13 @@ presbyopic          hypermetrope            yes                     normal      
 >>> print(dictionary) 
 # {'Peter': 84, 'Julia': 65, 'Alex': 77}
 #--------------------------------
-
+# time consumtion
+>>> t1 = time.clock()
+>>> sum([i * i for i in range(1, 100000000)])
+>>> t2 = time.clock()
+>>> time_diff = t2 - t1
+>>> print(f"It took {time_diff} Secs to execute this method") 
+# It took 13.197494000000006 Secs to execute this method
 #--------------------------------
 
 #--------------------------------
