@@ -140,7 +140,13 @@ presbyopic          hypermetrope            no                      normal      
 presbyopic          hypermetrope            yes                     reduced                 none
 presbyopic          hypermetrope            yes                     normal                  none
 #--------------------------------
-
+# Using ZIP When Working with Lists
+countries = ['France', 'Germany', 'Canada']
+capitals = ['Paris', 'Berlin', 'Ottawa']
+for country, capital in zip(countries,capitals):
+	print(country, capital) # France Paris 
+							# Germany Berlin
+                            # Canada Ottawa
 #--------------------------------
 
 #--------------------------------
