@@ -292,7 +292,11 @@ else:
 >>> it.dropwhile(lambda x: x < 3, [0, 1, 2, 3, 4])
 # [3, 4]
 #--------------------------------
-
+# Creating an iterator that filters elements from iterable returning only those for which the predicate is False
+>>> import itertools
+# keeping only false values
+>>> list(itertools.filterfalse(bool, [None, False, 1, 0, 10]))
+# [None, False, 0]
 #--------------------------------
 
 #--------------------------------
