@@ -384,11 +384,34 @@ import collections
 >>> file_to_open.exists()
 # True
 #--------------------------------
+# Using yield to create a simple iterator
+def foo(lst):
+    for x in lst:
+        yield x
+        yield x-1
+        yield x-2
 
+a = [1, 3]
+list(foo(a))
+[1,0,-1,3,2,1]
 #--------------------------------
-
+# Merge Dictionaries
+>>> x = {'u': 1}
+>>> y = {'v': 2}
+>>> z = {**x, **y, 'w': 4}
+>>> z
+# {'u': 1, 'v': 2, 'w': 4}
 #--------------------------------
-
+# Sort Sequences
+>>> x = (1, 'v')
+>>> y = (4, 'u')
+>>> z = (2, 'w')
+>>> sorted([x, y, z])
+# [(1, 'v'), (2, 'w'), (4, 'u')]
+>>> sorted([x, y, z], key=lambda item: item[1])
+# [(4, 'u'), (1, 'v'), (2, 'w')]
+>>> sorted([x, y, z], key=lambda item: item[1], reverse=True)
+# [(2, 'w'), (1, 'v'), (4, 'u')]
 #--------------------------------
 
 #--------------------------------
