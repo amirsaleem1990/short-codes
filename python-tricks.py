@@ -250,7 +250,19 @@ else:
 >>> m
 # {0, 1, 4, 9, 16}
 #--------------------------------
+# Generator comprehension.
+# A generator comprehension is the lazy version of a list comprehension.
+>>> m = (x ** 2 for x in range(5))
+>>> m
+# <generator object <genexpr> at 0x108efe408>
+>>> list(m)
+# [0, 1, 4, 9, 16]
 
+>>> m = (x ** 2 for x in range(5))
+>>> next(m)
+# 0
+>>> list(m)
+# [1, 4, 9, 16]
 #--------------------------------
 
 #--------------------------------
