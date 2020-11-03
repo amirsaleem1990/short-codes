@@ -413,7 +413,15 @@ list(foo(a))
 >>> sorted([x, y, z], key=lambda item: item[1], reverse=True)
 # [(2, 'w'), (1, 'v'), (4, 'u')]
 #--------------------------------
+# Sort Dictionaries
+>>> x = {'u': 4, 'w': 2, 'v': 1}
+>>> sorted(x.items())
+# [('u', 4), ('v', 1), ('w', 2)]
 
+>>> sorted(x.items(), key=lambda item: item[1])
+# [('v', 1), ('w', 2), ('u', 4)]
+>>> sorted(x.items(), key=lambda item: item[1], reverse=True)
+# [('u', 4), ('w', 2), ('v', 1)]
 #--------------------------------
 
 #--------------------------------
