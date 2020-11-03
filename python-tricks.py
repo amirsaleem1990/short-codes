@@ -214,9 +214,15 @@ presbyopic          hypermetrope            yes                     normal      
 >>> a
 # {"a":1, "b":2, "c":1}
 #--------------------------------
-
+# Finding the index of the min/max item in an iterable.
+>>> a = [2, 3, 1]
+>>> min(enumerate(a),key=lambda x: x[1])[0]
+# 2
 #--------------------------------
-
+# Multiple predicates short-cut.
+>>> n = 10
+>>> 1 < n < 20
+# True
 #--------------------------------
 
 #--------------------------------
