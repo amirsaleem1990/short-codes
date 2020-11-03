@@ -284,7 +284,13 @@ else:
 >>> list(itertools.accumulate([9, 21, 17, 5, 11, 12, 2, 6], min))
 # [9, 9, 9, 5, 5, 5, 2, 2]
 #--------------------------------
+# Creating an iterator that returns elements from the iterable as long as the predicate is true
+>>> import itertools
+>>> itertools.takewhile(lambda x: x < 3, [0, 1, 2, 3, 4])  
+# [0, 1, 2]
 
+>>> it.dropwhile(lambda x: x < 3, [0, 1, 2, 3, 4])
+# [3, 4]
 #--------------------------------
 
 #--------------------------------
