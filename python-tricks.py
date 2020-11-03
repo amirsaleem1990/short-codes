@@ -179,7 +179,17 @@ presbyopic          hypermetrope            yes                     normal      
 >>> list(enumerate(a))
 [(0, 'Hello'), (1, 'world'), (2, '!')]
 #--------------------------------
+# Combining two iterable of tuples or pivot nested iterables.
+# Combining two iterables
+>>> a = [1, 2, 3]
+>>> b = ['a', 'b', 'c']
+>>> z = zip(a, b)
+>>> z
+# [(1, 'a'), (2, 'b'), (3, 'c')]
 
+# Pivoting list of tuples
+>>> zip(*z)
+# [(1, 2, 3), ('a', 'b', 'c')]
 #--------------------------------
 
 #--------------------------------
