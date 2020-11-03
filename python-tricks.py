@@ -364,7 +364,25 @@ import collections
 >>> user_id 
 # UUID('7c2faedd-805a-478e-bd6a-7b26210425c7')
 #--------------------------------
+# An elegant way to deal with a file path (3.4≥)
+>>> from pathlib import Path
+>>> data_folder = Path("source_data/text_files/")
 
+# Path calculation and metadata
+>>> file_to_open = data_folder / "raw_data.txt"
+>>> file_to_open.name
+# "raw_data.txt"
+>>> file_to_open.suffix
+# "txt"
+>>>file_to_open.stem
+# "raw_data"
+                       
+# Files functions                       
+>>> f = open(file_to_open)
+>>> f.read()
+# content of the file                      
+>>> file_to_open.exists()
+# True
 #--------------------------------
 
 #--------------------------------
