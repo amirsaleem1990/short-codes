@@ -154,9 +154,17 @@ presbyopic          hypermetrope            yes                     normal      
 >>> list(itertools.combinations(friends, r=2)) 
 # [('Team 1', 'Team 2'),      ('Team 1', 'Team 3'),  ('Team 1', 'Team 4'),  ('Team 2', 'Team 3'),  ('Team 2', 'Team 4'),  ('Team 3', 'Team 4')]
 #--------------------------------
-
+# count of unique values
+>>> from collections import Counter
+>>> count = Counter(['a','b','c','d','b','c','d','b'])
+>>> print(count) # Counter({'b': 3, 'c': 2, 'd': 2, 'a': 1})
 #--------------------------------
-
+# Convert Two Lists Into a Dictionary
+>>> students = ["Peter", "Julia", "Alex"]
+>>> marks = [84, 65, 77]
+>>> dictionary = dict(zip(students, marks))
+>>> print(dictionary) 
+# {'Peter': 84, 'Julia': 65, 'Alex': 77}
 #--------------------------------
 
 #--------------------------------
