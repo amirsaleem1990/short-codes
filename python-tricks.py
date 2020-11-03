@@ -279,7 +279,10 @@ else:
 >>> list(it.zip_longest(x, y))
 # [(1, 'a'), (2, 'b'), (3, 'c'), (4, None), (5, None)]
 #--------------------------------
-
+# Creating accumulated results of iterable given a function
+>>> import itertools
+>>> list(itertools.accumulate([9, 21, 17, 5, 11, 12, 2, 6], min))
+# [9, 9, 9, 5, 5, 5, 2, 2]
 #--------------------------------
 
 #--------------------------------
