@@ -269,7 +269,15 @@ else:
 >>> [y - x for x,y in zip(a,a[1:])]
 # [1, 2, -2]
 #--------------------------------
+# Combining two iterables of tuples with padding or pivot nested iterable with padding.
+>>> import itertools as it
+>>> x = [1, 2, 3, 4, 5]
+>>> y = ['a', 'b', 'c']
+>>> list(zip(x, y))
+# [(1, 'a'), (2, 'b'), (3, 'c')]
 
+>>> list(it.zip_longest(x, y))
+# [(1, 'a'), (2, 'b'), (3, 'c'), (4, None), (5, None)]
 #--------------------------------
 
 #--------------------------------
