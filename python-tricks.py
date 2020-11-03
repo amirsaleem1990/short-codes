@@ -199,7 +199,13 @@ presbyopic          hypermetrope            yes                     normal      
 >>> max(a,key=abs)
 # 3
 #--------------------------------
+>>> a = [1, 2, -3]
+>>> sorted(a)
+# [-3, 1, 2]
 
+# Getting sorted iterable (can sort by “compare” function).
+>>> sorted(a,key=abs)
+# [1, 2, -3]
 #--------------------------------
 
 #--------------------------------
