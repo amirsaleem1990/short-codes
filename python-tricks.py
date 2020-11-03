@@ -336,7 +336,17 @@ import collections
 >>> A.most_common(3)
 # [(3, 4), (1, 2), (2, 2)]
 #--------------------------------
+# Ordered dict structure (a subclass of dictionary that keeps order).
+>>> from collections import OrderedDict
 
+>>> d = OrderedDict.fromkeys('abcde')
+>>> d.move_to_end('b')
+>>> ''.join(d.keys())
+# 'acdeb'
+
+>>> d.move_to_end('b', last=False)
+>>> ''.join(d.keys())
+# 'bacde'
 #--------------------------------
 
 #--------------------------------
