@@ -346,5 +346,7 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 
 # print list each element in saperate line ......... a=list("amirsaleem");  print(*a, sep="\n")
 
-map ............. s='1 3 3 7 2 5 1 2 4 6' ; list(map(int, s.split())) ............ [1, 3, 3, 7, 2, 5, 1, 2, 4, 6]
+# map ............. s='1 3 3 7 2 5 1 2 4 6' ; list(map(int, s.split())) ............ [1, 3, 3, 7, 2, 5, 1, 2, 4, 6]
 # two aritmatic operations in short ......... 'm' if 10>f<5 else 'amir'
+# sort dictionary by length ............. sorted(dic, key=len, reverse=True)
+
