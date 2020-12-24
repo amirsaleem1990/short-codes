@@ -350,3 +350,9 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 # two aritmatic operations in short ......... 'm' if 10>f<5 else 'amir'
 # sort dictionary by length ............. sorted(dic, key=len, reverse=True)
 
+#----------------------
+# convert minutes to hours,minutes and seconds
+>>> import datetime
+>>> str(datetime.timedelta(seconds=666))
+'0:11:06'
+#-----------END
