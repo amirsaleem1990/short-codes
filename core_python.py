@@ -357,3 +357,5 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 '0:11:06'
 #-----------END
 # print fixed width / spaces ........... "{:<15}".format(string) ........... "{:>15}".format(string) .......... "{0:<15}".format(string)
+
+# get value using id / memory id / ram id ................. import ctypes; ctypes.cast(id_, ctypes.py_object).value
