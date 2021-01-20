@@ -21,7 +21,9 @@ def update_all_vars_ids(locals_):
 	z = [i for i in z if not i in remove__]
 	return z
 
-for i_id in update_all_vars_ids(locals()): global_id_dict_[i_id] = id(eval(i_id)); pickle.dump(global_id_dict_, open("global_id_dict_.pkl", "wb"))
+for i_id in update_all_vars_ids(locals()): 
+	global_id_dict_[i_id] = id(eval(i_id))
+	pickle.dump(global_id_dict_, open("global_id_dict_.pkl", "wb"))
 print(global_id_dict_)
 
 # ctypes.cast(id_number), ctypes.py_object).value
