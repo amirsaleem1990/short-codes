@@ -359,3 +359,82 @@ translationtable = str.maketrans({i:'' for i in characters_to_remove})
 # print fixed width / spaces ........... "{:<15}".format(string) ........... "{:>15}".format(string) .......... "{0:<15}".format(string)
 
 # get value using id / memory id / ram id ................. import ctypes; ctypes.cast(id_, ctypes.py_object).value
+
+# for building combinations ................. import itertools; friends = ['Team 1', 'Team 2', 'Team 3', 'Team 4']; list(itertools.combinations(friends, r=2)) # [('Team 1', 'Team 2'),      ('Team 1', 'Team 3'),  ('Team 1', 'Team 4'),  ('Team 2', 'Team 3'),  ('Team 2', 'Team 4'),  ('Team 3', 'Team 4')] ............. this will result : [('Team 1', 'Team 2'), ('Team 1', 'Team 3'),('Team 1', 'Team 4'),('Team 2', 'Team 3'),('Team 2', 'Team 4'), ('Team 3', 'Team 4')]
+
+# count (as pd.Series.value_counts()) : from collections import Counter; Counter(['a','b','c','d','b','c','d','b']) ............ which restul: Counter({'b': 3, 'c': 2, 'd': 2, 'a': 1})
+
+# convert two lists into dictionary ............. dictionary = dict(zip(lst_1, lst_2))
+
+# get absuloute max ............... max([3,2,-8,1],key=abs)
+# sorted by func .............. sorted([3,2,-8,1,key=abs)
+# Finding the index of the min/max item in an iterable............  min(enumerate(a),key=lambda x: x[1])[0]
+# Multiple predicates short-cut. ............... n=10;  1 < n < 20 # True
+
+# Try-catch-else construct
+try:
+  foo() 
+except Exception: 
+  print("Exception occured")
+else:
+  print("Exception didnt occur")
+finally:
+  print("Always gets here")
+
+# there is while-else as for-else
+
+# A generator comprehension is the lazy version of a list comprehension........ m = (x ** 2 for x in range(5)); m # <generator object <genexpr> at 0x108efe408> ; next(m) # 0
+
+# List comprehension with the current and previous value................ [y - x for x,y in zip(a,a[1:])]
+
+# a, *b, c = [1, 2, 3, 4, 5]
+
+def test(x, y, z):
+  print(x, y, z)  
+res = test(*[10, 20, 30]) 
+# 10 20 30
+res = test(**{'x': 1, 'y': 2, 'z': 3} )
+# 10 20 30  
+
+# Flatten iterables................. list(itertools.chain.from_iterable(nested_list))
+
+# Creating cartesian products from iterables.
+for p in itertools.product([1, 2, 3], [4, 5]):
+   print(''.join(str(x) for x in p))
+# (1, 4)
+# (1, 5)
+# (2, 4)
+# (2, 5)
+# (3, 4)
+# (3, 5)
+
+# Creating permutation from iterable.
+for p in itertools.permutations([1, 2, 3, 4]):
+     print(''.join(str(x) for x in p))
+# 123
+# 132
+# 213
+# 231
+# 312
+# 321
+
+# Use A Dictionary To Store A Switch
+>>> func_dict = {'sum': lambda x, y: x + y, 'subtract': lambda x, y: x - y}
+>>> func_dict['sum'](9,3) # 12
+>>> func_dict['subtract'](9,3) #6
+
+
+
+
+
+# Failure to define a dictionary
+webstersDict = {(1, 2.0): 'tuples can be keys',
+                1: 'ints can be keys',
+                'run': 'strings can be keys', 
+                ['sock', 1, 2.0]: 'lists can NOT be keys'}
+
+
+
+# remove value from dictionay............. del dict['key']
+
+# in dictionay we can access value by <[]> or <.get> methog. agar <[]> use karen gy or galat gey dalen gy to keyerror aay ga, or agar <.get> method use karty hwy galat key pass karen gy to None return ho jay ga. You can also specify a default value to return if the key doesn’t exist. (eg:dictionay.get('chicken', 0))
