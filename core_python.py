@@ -438,3 +438,23 @@ webstersDict = {(1, 2.0): 'tuples can be keys',
 # remove value from dictionay............. del dict['key']
 
 # in dictionay we can access value by <[]> or <.get> methog. agar <[]> use karen gy or galat gey dalen gy to keyerror aay ga, or agar <.get> method use karty hwy galat key pass karen gy to None return ho jay ga. You can also specify a default value to return if the key doesn’t exist. (eg:dictionay.get('chicken', 0))
+
+#-----------------------------------
+create variable from string
+>>> %whos
+Interactive namespace is empty.
+
+>>> student = ["lloyd", "alice", "tyler"] 
+>>> for i in student: 
+        exec(i+"={}")
+
+>>> %whos                                                                                                          
+Variable   Type    Data/Info
+----------------------------
+alice      dict    n=0
+i          str     tyler
+lloyd      dict    n=0
+student    list    n=3
+tyler      dict    n=0
+
+#----------------------------------
