@@ -458,3 +458,4 @@ student    list    n=3
 tyler      dict    n=0
 
 #----------------------------------
+# Reimport a module in python while interactive .............. import importlib; importlib.reload(nameOfYourModule)
