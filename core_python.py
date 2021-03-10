@@ -461,3 +461,5 @@ tyler      dict    n=0
 # Reimport a module in python while interactive .............. import importlib; importlib.reload(nameOfYourModule)
 
 #Thousand coma (for more readability for big numbers ......... f'{value:,}'
+
+time.time() ............ get epoch time
