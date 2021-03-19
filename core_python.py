@@ -463,3 +463,6 @@ tyler      dict    n=0
 #Thousand coma (for more readability for big numbers ......... f'{value:,}'
 
 time.time() ............ get epoch time
+
+# set(parsing_error) & set(corrupt_error) ............. intersection between two sets
+
