@@ -466,3 +466,5 @@ time.time() ............ get epoch time
 
 # set(parsing_error) & set(corrupt_error) ............. intersection between two sets
 
+
+# replace one or more spaces/new line/sub string with one ............. import re; re.sub(' +', ' ', 'The     quick brown    fox') # this is an example of spaces
