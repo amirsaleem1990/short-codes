@@ -469,3 +469,5 @@ time.time() ............ get epoch time
 
 # replace one or more spaces/new line/sub string with one ............. import re; re.sub(' +', ' ', 'The     quick brown    fox') # this is an example of spaces
 # get all code for given librery ........... import inspect, datetime; print(inspect.getsource(datetime))
+
+# convert byte to str .......... _str = b"abcde".decode("utf-8")
