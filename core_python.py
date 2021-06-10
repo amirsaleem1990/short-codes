@@ -471,3 +471,5 @@ time.time() ............ get epoch time
 # get all code for given librery ........... import inspect, datetime; print(inspect.getsource(datetime))
 
 # convert byte to str .......... _str = b"abcde".decode("utf-8")
+
+# print line being executed when running a Python script ............. python3 -m trace -t my_script.py my_peram_1 my_peram_2 ............... https://tereshenkov.wordpress.com/2018/10/26/how-to-print-line-being-executed-when-running-a-python-script/
