@@ -473,3 +473,7 @@ time.time() ............ get epoch time
 # convert byte to str .......... _str = b"abcde".decode("utf-8")
 
 # print line being executed when running a Python script ............. python3 -m trace -t my_script.py my_peram_1 my_peram_2 ............... https://tereshenkov.wordpress.com/2018/10/26/how-to-print-line-being-executed-when-running-a-python-script/
+
+# get file size ................ os.path.getsize("/path/to/file")
+
+# sclice list with multiple indexes ...............  from operator import itemgetter, a = [-2, 1, 5, 3, 8, 5, 6, b = [1, 2, 5, print(itemgetter(*b)(a) # (1, 5, 5)
