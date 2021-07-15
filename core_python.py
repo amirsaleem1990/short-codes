@@ -477,3 +477,7 @@ time.time() ............ get epoch time
 # get file size ................ os.path.getsize("/path/to/file")
 
 # sclice list with multiple indexes ...............  from operator import itemgetter, a = [-2, 1, 5, 3, 8, 5, 6, b = [1, 2, 5, print(itemgetter(*b)(a) # (1, 5, 5)
+
+# split on multiple characters at once ............. import re, re.split(', |_|-|!|\+', "GeeksforGeeks, is_an-awesome ! app + too") # ['GeeksforGeeks', ' is', 'an', 'awesome', ' app', 'too']
+
+# print dictinory nicely| prety ................. import json, print (json.dumps(my_dict, indent=2, default=str)) .............. pip install print_dict, from print_dict import pd, pd(your_dictionary_name) ............ import pprint, pp = pprint.PrettyPrinter(depth=4), pp.pprint(mydict) ................ pout.vs(my_dict) [or you can return the formatted string output of your object: v = pout.s(data)]
