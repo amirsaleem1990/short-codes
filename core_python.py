@@ -483,3 +483,5 @@ time.time() ............ get epoch time
 # print dictinory nicely| prety ................. import json, print (json.dumps(my_dict, indent=2, default=str)) .............. pip install print_dict, from print_dict import pd, pd(your_dictionary_name) ............ import pprint, pp = pprint.PrettyPrinter(depth=4), pp.pprint(mydict) ................ pout.vs(my_dict) [or you can return the formatted string output of your object: v = pout.s(data)]
 
 # replace multiple spaces with single one ........................ import re, re.sub(' +', ' ', 'The     quick brown    fox') # 'The quick brown fox'
+
+# Tab completion in Python's input() ................   import readline ; readline.parse_and_bind("tab: complete")
