@@ -485,3 +485,5 @@ time.time() ............ get epoch time
 # replace multiple spaces with single one ........................ import re, re.sub(' +', ' ', 'The     quick brown    fox') # 'The quick brown fox'
 
 # Tab completion in Python's input() ................   import readline ; readline.parse_and_bind("tab: complete")
+
+# Open Web Browser in Python Script ................ import webbrowser; webbrowser.open("https://google.com") # open in default browser ................. webbrowser.get("firefox").open("https://www.bing.com") # open in selected browser
