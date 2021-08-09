@@ -487,3 +487,6 @@ time.time() ............ get epoch time
 # Tab completion in Python's input() ................   import readline ; readline.parse_and_bind("tab: complete")
 
 # Open Web Browser in Python Script ................ import webbrowser; webbrowser.open("https://google.com") # open in default browser ................. webbrowser.get("firefox").open("https://www.bing.com") # open in selected browser
+
+
+# remove duplicates from a list whilst preserving order ................ items = [1, 2, 0, 1, 3, 2];  list(dict.fromkeys(items)) #[1, 2, 0, 3]
