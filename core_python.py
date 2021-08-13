@@ -491,4 +491,5 @@ time.time() ............ get epoch time
 
 # remove duplicates from a list whilst preserving order ................ items = [1, 2, 0, 1, 3, 2];  list(dict.fromkeys(items)) #[1, 2, 0, 3]
 
-try with multiple excepts ........... try: a > "b";  except NameError : print("NameError"); except TypeError: print("TypeError")
+# try with multiple excepts ........... try: a > "b";  except NameError : print("NameError"); except TypeError: print("TypeError")
+# joblib is like a pickle library to save an object .................... joblib.dump(object, object_name) .............. object = joblib.load(file_name)
