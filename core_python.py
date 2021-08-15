@@ -493,3 +493,5 @@ time.time() ............ get epoch time
 
 # try with multiple excepts ........... try: a > "b";  except NameError : print("NameError"); except TypeError: print("TypeError")
 # joblib is like a pickle library to save an object .................... joblib.dump(object, object_name) .............. object = joblib.load(file_name)
+
+# print(now.strftime('%Y/%m/%d %H:%M:%S')) # 24hours format .................. print(now.strftime('%Y/%m/%d %I:%M:%S')) # 12hours format
