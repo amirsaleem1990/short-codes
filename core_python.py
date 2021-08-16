@@ -495,3 +495,6 @@ time.time() ............ get epoch time
 # joblib is like a pickle library to save an object .................... joblib.dump(object, object_name) .............. object = joblib.load(file_name)
 
 # print(now.strftime('%Y/%m/%d %H:%M:%S')) # 24hours format .................. print(now.strftime('%Y/%m/%d %I:%M:%S')) # 12hours format
+
+# save string to file ...............  print("Hello world", file=open("foo.txt", "a")) # hello world now saved in foo.txt 
+
