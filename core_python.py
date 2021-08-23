@@ -498,3 +498,5 @@ time.time() ............ get epoch time
 
 # save string to file ...............  print("Hello world", file=open("foo.txt", "a")) # hello world now saved in foo.txt 
 
+
+# color specific word ............ import termcolor; to_print.replace(word_to_color, termcolor.colored(word_to_color, 'red'))
