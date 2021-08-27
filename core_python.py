@@ -500,3 +500,10 @@ time.time() ............ get epoch time
 
 
 # color specific word ............ import termcolor; to_print.replace(word_to_color, termcolor.colored(word_to_color, 'red'))
+
+# count accurance ........... 
+dic = {}
+for i in list("amirsaleem"):
+    dic[i] = dic.get(i, 0) + 1
+print(dic) # {'a': 2, 'm': 2, 'i': 1, 'r': 1, 's': 1, 'l': 1, 'e': 2}
+#....................
