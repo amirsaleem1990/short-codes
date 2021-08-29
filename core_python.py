@@ -507,3 +507,7 @@ for i in list("amirsaleem"):
     dic[i] = dic.get(i, 0) + 1
 print(dic) # {'a': 2, 'm': 2, 'i': 1, 'r': 1, 's': 1, 'l': 1, 'e': 2}
 #....................
+
+
+Python modules have a __file__ attribute that tells you the location of their __init__.py file on the filesystem, so import pandas as pd; pd.__file__ # '/usr/local/lib/python3.8/dist-packages/pandas/__init__.py'
+
