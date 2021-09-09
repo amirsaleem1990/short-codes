@@ -511,3 +511,6 @@ print(dic) # {'a': 2, 'm': 2, 'i': 1, 'r': 1, 's': 1, 'l': 1, 'e': 2}
 
 Python modules have a __file__ attribute that tells you the location of their __init__.py file on the filesystem, so import pandas as pd; pd.__file__ # '/usr/local/lib/python3.8/dist-packages/pandas/__init__.py'
 
+
+# Picking out items from a python list which have specific indexes ............ my_list = list(range(10, 20, 1)); indexes = [2,5,8] ; list(map(lambda x:my_list[x],indexes)) # [12, 15, 18]
+
