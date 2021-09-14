@@ -515,3 +515,6 @@ Python modules have a __file__ attribute that tells you the location of their __
 # Picking out items from a python list which have specific indexes ............ my_list = list(range(10, 20, 1)); indexes = [2,5,8] ; list(map(lambda x:my_list[x],indexes)) # [12, 15, 18]
 
 # replace every 2 value in list with _ ......... x = list("amirsaleem"); x[::2] = ['_']*len(x[::2]); x # ['_', 'm', '_', 'r', '_', 'a', '_', 'e', '_', 'm']
+
+# The enumerate() function accepts an optional argument which allows you to set the initial value for its counter variable: enumerate(names, 1)
+
