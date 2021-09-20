@@ -518,3 +518,4 @@ Python modules have a __file__ attribute that tells you the location of their __
 
 # The enumerate() function accepts an optional argument which allows you to set the initial value for its counter variable: enumerate(names, 1)
 
+# save to text file ........... print("amir", "saleem", "hamza", file=open("x", 'w')) ; !cat x #amir saleem hamza         NOTE: print k zarye sy jab save karty hen to exactly wohi cheez save hoti h jo hame screen par nazar aati h, eg: print(list("amirsaleem"), file=open("x", 'w')) ; !cat x  #['a', 'm', 'i', 'r', 's', 'a', 'l', 'e', 'e', 'm']
