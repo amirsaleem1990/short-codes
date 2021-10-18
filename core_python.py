@@ -522,3 +522,7 @@ Python modules have a __file__ attribute that tells you the location of their __
 
 # perameters in the URL .....................     requests.get(baseurl,  params={ "q" :  query, "k" : key, "type" :  "movies", "limit" :  "5"}) == requests.get(baseurl + f"?q={query}&k={key}&type=movies&limit=5")
 # get source code of library ......... import inspect;  print(inspect.getsource(library_name OR library_name.method_name))
+
+# Partition a list into N groups: We used iter() as an iterator over a sequence................. geek = ['Sun', 'Flowers', 'Peoples', 'Animals', 'Day', 'Night']; list(zip (*[iter(geek)] * 2))  # [('Sun', 'Flowers'), ('Peoples', 'Animals'), ('Day', 'Night')]
+
+# For nested loops in python we can use the  same variable name in both inner and outer for-loop variables without fear of  inconsistent data or any errors !!
