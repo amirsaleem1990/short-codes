@@ -526,3 +526,6 @@ Python modules have a __file__ attribute that tells you the location of their __
 # Partition a list into N groups: We used iter() as an iterator over a sequence................. geek = ['Sun', 'Flowers', 'Peoples', 'Animals', 'Day', 'Night']; list(zip (*[iter(geek)] * 2))  # [('Sun', 'Flowers'), ('Peoples', 'Animals'), ('Day', 'Night')]
 
 # For nested loops in python we can use the  same variable name in both inner and outer for-loop variables without fear of  inconsistent data or any errors !!
+
+# get multiple values from dictionay ............... x = {"a" : 1, "m" : 2, "i" : 3, "r" : 4, "s" : 5}; from operator import itemgetter ; itemgetter("m", 'a', 's')(x) # (2, 1, 5)
+
