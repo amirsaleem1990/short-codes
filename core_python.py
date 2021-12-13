@@ -532,3 +532,8 @@ Python modules have a __file__ attribute that tells you the location of their __
 # x,y = 8,None ; x or 'amir' #8 ...... y or 'amir' # 'amir'
 
 
+# open multiple files with single 'with' ->
+with open("file.txt", 'r') as f1, open("file_modified.txt", 'r') as f2: #->
+    f1 = f1.read().splitlines() # ->
+    f2 = f2.read().splitlines() # ->
+############################################
