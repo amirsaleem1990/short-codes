@@ -537,3 +537,117 @@ with open("file.txt", 'r') as f1, open("file_modified.txt", 'r') as f2: #->
     f1 = f1.read().splitlines() # ->
     f2 = f2.read().splitlines() # ->
 ############################################
+
+
+# The difference between “==” and “is” operator:
+    
+    # If any object is associated with the value ‘None’ and tested with an if statement, None will be evaluated as False implicitly. ........... so x=None; if not x: print("H") # -> H # here 'not x' is equals to 'not False'
+    
+    # “==” and “!=” are Equality operators that compare the values of two objects.
+    # “is” and “is not” are Identity operators that compare the id (memory location) of them. In simple terms, both objects are pointing to the same or not with respect to the memory location.
+    # Python standards — PEP 8 says:
+        # 1. Comparisons to singletons like None should always be done with is or is not, never the equality operators.
+        # 2. Also, beware of writing if x when you really mean if x is not None — e.g. when testing whether a variable or argument that defaults to None was set to some other value. The other value might have a type (such as a container) that could be false in a boolean context
+
+    # Whenever you have to compare any object or variable with None, never use an equality operator(== / !=). This may lead to a bug or an incorrect result, but hopefully, in some cases, Python provides the correct result.
+    # Fun Fact: Identity operators provide faster performance than equality operators.
+    # Note: Even though identity operators are faster than equality operators, it is still recommended that they not be used just for performance, because the accuracy of the result is more important than performance
+
+    obj = None
+    obj == None # True
+    obj is None # True
+
+    None == None # True
+    None is None # True
+    None == [] # False
+    None is [] # False
+
+
+
+#_--------------------------------------------------------------------------------------
+#                 Coding style
+# Constant: An uppercase single letter, word, or phrase as a constant. To increase readability, use underscores to separate words.
+# Examples: CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT
+
+# Maximum Line Length:
+# Line length limit — 79 characters per line (recommended).
+# Docstrings & Comments — 72 characters per line (recommended).
+# a) This practice avoids the wrapping of a line.
+# b) Note: The maximum line length may differ from one team/organization to the next. It is however advised not to exceed 100 characters each line.
+# 3. If code is enclosed in parentheses, brackets, or braces, Python will assume line continuation.
+# 4. However, in some cases, you must be explicit with line continuation, which is accomplished with backslashes.
+    with open('/path/to/some/file/you/want/to/read') as file_1, \
+         open('/path/to/some/file/being/written', 'w') as file_2:
+        file_2.write(file_1.read())
+
+# Imports:
+#     Keep import at the top level.
+#     Absolute imports are preferred above relative imports.
+#     Avoid wildcard imports.
+
+# Always import one class or function on each line.
+#     NOT RECOMMENDED:
+        import os, sys
+
+
+# Order of imports: 
+#     Always import in groups alphabetically in the following order, with a single blank line separating each group-
+#     a. Standard library
+#     b. Related third-party library
+#     c. Local or application-specific library
+
+    # Standard libaries
+    import os
+    import sys
+    import math
+
+    # Related third-party libaries
+    import pandas
+    import numpy
+
+    # Local or application-specific libaries
+    import mypkg1
+    import mypkg2
+
+
+# Tools & Modules to Adhere PEP 8:
+#     pycodestyle: 
+#         A tool for checking your Python code adheres to some of the PEP 8 style guidelines.
+#         pip install pycodestyle
+#     flake8: 
+#         A debugger that combines pyflakes with pycodestyle.
+#         pip install flake8
+
+#     Autoformatters: 
+#         They are programs that automatically rewrite your code to adhere to PEP 8. One such software is black (https://pypi.org/project/black/), which auto-formats code in accordance with the majority of the PEP 8 guidelines. If you want to alter the line length limit, then you can use the — line-length flag (default line length is 88 characters):
+    
+#         pip install black
+    
+#         Note:
+#             1. Black requires Python 3.6+ version.
+#             2. If you use PyCharm, PEP 8 guidelines will be validated on the fly with an exception, such as the default maximum line limit of 120.
+#             These settings can be customized as needed, and you can also add third-party plugins.
+    
+#     isort: 
+#         https://pypi.org/project/isort/
+#         It is a Python package that sorts imports alphabetically and automatically divides them into sections and types. It comes with a command-line application, a Python library, and plugins for several editors to sort all of your imports efficiently.
+#         pip install isort
+#         Note:
+#             1. isort requires Python 3.6+ to run, but it can also format Python 2 code.
+#             2. There are also isort-based editor plugins available. For more information click here (https://www.python.org/dev/peps/pep-0008/).
+#------------------------------------------------------
+try:
+    f = open("file.txt")
+except FileNotFoundError as e: # if an 'FileNotFoundError' error occured.
+    print("ERROR_1")
+except Exception as e:         # if an error occured but was not 'FileNotFoundError'.
+    print("ERROR_2")
+else: # if no error
+    print(f.read())
+    f.close()
+finally:                       # run in every case
+    print("Executing Finally...")
+#-------------------------------------------------------
+# "parallel execution" is each task is handled by a separate CPU, and that these tasks are ran at the same time.
+#_--------------------------------------------------------------------------------------
+
