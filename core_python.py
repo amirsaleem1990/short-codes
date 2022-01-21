@@ -651,3 +651,8 @@ finally:                       # run in every case
 # "parallel execution" is each task is handled by a separate CPU, and that these tasks are ran at the same time.
 #_--------------------------------------------------------------------------------------
 
+
+# display in IPython: Display Math Equations in Jupyter Notebook ................ from IPython.display import display, Math, Latex; a,b = 3,5; display(Math(f'y= {a}x+{b}'))
+# Get Information About Your Hardware and the Packages Being Used within Your Notebook ............. %load_ext watermark ; %watermark ................................. We can also use watermark to show the versions of the libraries being used: ....... %watermark --iversions # After import all libraries
+# Generate requirements.txt File for Jupyter Notebooks Based on Imports  ........... to save all packages in your current project to a requirements.txt file : pipreqsnb .
+ 
