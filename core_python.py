@@ -656,3 +656,10 @@ finally:                       # run in every case
 # Get Information About Your Hardware and the Packages Being Used within Your Notebook ............. %load_ext watermark ; %watermark ................................. We can also use watermark to show the versions of the libraries being used: ....... %watermark --iversions # After import all libraries
 # Generate requirements.txt File for Jupyter Notebooks Based on Imports  ........... to save all packages in your current project to a requirements.txt file : pipreqsnb .
  
+
+######### read multiple files in single 'with'
+with open("new") as new, open("old") as old: 
+     new = set(new.read().splitlines()) 
+     old = set(old.read().splitlines())
+########
+
