@@ -663,3 +663,5 @@ with open("new") as new, open("old") as old:
      old = set(old.read().splitlines())
 ########
 
+# Convert Variable Name to String ................  from varname import nameof; variable=0 ; name=nameof(variable) ; name # 'variable'
+
