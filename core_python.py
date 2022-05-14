@@ -665,3 +665,20 @@ with open("new") as new, open("old") as old:
 
 # Convert Variable Name to String ................  from varname import nameof; variable=0 ; name=nameof(variable) ; name # 'variable'
 
+
+############################## Debugging:
+# one way of debugging a Python script is to run it in the command line with the Python debugger. In order to do so, we would need to use the -m pdb command that loads the pdb module before executing the Python script. In the same command-line interface, we would then follow this by a specific debugger command of choice, such as n to move to the next line or s if we intend to step into a function. 
+# built-in breakpoint() function introduced in Python 3.7 for debugging.
+# Before Python 3.7:
+#     import pdb
+#     pdb.set_trace()
+# In Python 3.7:
+#     breakpoint()
+# When breakpoint() called, the default implementation of the breakpoint() function will call sys.breakpointhook(), which in turn calls the pdb.set_trace() function. This is convenient because we will not need to import pdb and call pdb.set_trace() explicitly ourselves. 
+# The value of PYTHONBREAKPOINT is consulted every time that sys.breakpointhook() is called. This means that the value of this environment variable can be changed during the code execution, and the breakpoint() function would respond accordingly.  
+# The PYTHONBREAKPOINT environment variable can also be set to other values, such as the name of a callable. Say, for instance, that we’d like to use a different Python debugger other than pdb, such as ipdb (run pip install ipdb first if the debugger has not yet been installed). In this case, we would call the main.py script in the command line interface and hook the debugger without making any changes to the code itself:
+# >>> PYTHONBREAKPOINT=ipdb.set_trace python main.py
+#############################################
+
+
+
